@@ -129,7 +129,7 @@ class Plot2D : public Plot
 
     /// Draw boxes with error bars along *y* with given @p x, @p y, @p ydelta vectors.
     template <typename X, typename Y, typename YD>
-    auto drawBoxesWithErrorBarsY(const X& x, const Y& y, const Y& ydelta) -> DrawSpecs&;
+    auto drawBoxesWithErrorBarsY(const X& x, const Y& y, const YD& ydelta) -> DrawSpecs&;
 
     /// Draw boxes with error bars along *y* with given @p x, @p y, @p ylow, and @p yhigh vectors.
     template <typename X, typename Y, typename YL, typename YH>
